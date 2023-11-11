@@ -1,4 +1,4 @@
-# Detection-and-Prediction-from-Multimeter
+# Detection-and-Prediction of Digits-from-Multimeter
 
 This script determines whether or not an AA battery is usable by detecting the multimeter's reading when it is connected to the battery.
 

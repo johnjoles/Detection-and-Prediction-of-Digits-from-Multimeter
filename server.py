@@ -6,10 +6,6 @@ from tkinter import *
 import tkinter
 
 
-# from realsense_camera import *
-
-# rs = RealsenseCamera()
-
 
 class Multimeter:
 

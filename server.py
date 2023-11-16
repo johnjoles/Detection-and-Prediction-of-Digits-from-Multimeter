@@ -19,11 +19,11 @@ class Multimeter:
         window.title("Bring Your Own Device")
         window.config(bg=background)
         canvas = Canvas(width=200, height=158)
-        team_logo = PhotoImage(file="Team Logo.png")
+        team_logo = PhotoImage(file="Logo/Logo.png")
         canvas.create_image(99, 79, image=team_logo)
         canvas.grid(row=0, column=1)
         canvas1 = Canvas(width=70, height=70)
-        low_battery = PhotoImage(file="low battery.png")
+        low_battery = PhotoImage(file="Logo/low battery.png")
         canvas1.create_image(35, 35, image=low_battery)
         canvas1.grid(row=1, column=1)
         Result = tkinter.Label(text="Oops! Waste Battery", font=("Ariel", 20, "bold"))
@@ -37,11 +37,11 @@ class Multimeter:
         window.title("Bring Your Own Device")
         window.config(bg=background)
         canvas = Canvas(width=200, height=158)
-        team_logo = PhotoImage(file="Team Logo.png")
+        team_logo = PhotoImage(file="Logo/Logo.png")
         canvas.create_image(99, 79, image=team_logo)
         canvas.grid(row=0, column=1)
         canvas1 = Canvas(width=90, height=150)
-        full_battery = PhotoImage(file="full battery.png")
+        full_battery = PhotoImage(file="Logo/full battery.png")
         canvas1.create_image(45, 75, image=full_battery)
         canvas1.grid(row=1, column=1)
         Result = tkinter.Label(text="Usable Battery", font=("Ariel", 20, "bold"))
@@ -163,7 +163,7 @@ class Multimeter:
         second_digit = thresh[digits[2][1][1]:digits[2][3][1], digits[2][0][0]:digits[2][2][0]]
         third_digit = thresh[digits[3][1][1]:digits[3][3][1], digits[3][0][0]:digits[3][2][0]]
         fourth_digit = thresh[digits[4][1][1]:digits[4][3][1], digits[4][0][0]:digits[4][2][0]]
-        # fifth_digit = thresh[digits[5][1][1]:digits[5][3][1], digits[5][0][0]:digits[5][2][0]]
+        fifth_digit = thresh[digits[5][1][1]:digits[5][3][1], digits[5][0][0]:digits[5][2][0]]
         digit_number = [first_digit, second_digit, third_digit, fourth_digit]
         return digit_number
 
@@ -179,11 +179,11 @@ class Multimeter:
         digits = 0
         for num in screen_digit:
             digits = digits * 10 + num
-        digits = digits / 100
-        print(digits)
+        digits = digits / 1000
+        print(f"{digits} Volt ")
 
         digits_value = 0
-        if digits < 0.5:
+        if digits < 0.9:
             digits_value = 0
         else:
             digits_value = 1

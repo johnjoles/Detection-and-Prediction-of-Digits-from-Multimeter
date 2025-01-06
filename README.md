@@ -10,12 +10,12 @@ Finally, a window that uses a graphical user interface (GUI) opens to display th
 
 model.h5 = weight and model configuration file
 
-##Multimeter Digit Detection Using Tensorflow For A Battery With Residual Charge 
+## Multimeter Digit Detection Using Tensorflow For A Battery With Residual Charge 
 <img width="529" alt="image" src="https://github.com/user-attachments/assets/6f876caa-69e9-4311-9fe4-e4940b10acf6" />
 
 
 
-##Multimeter Digit Detection Using Tensorflow For A Dead Battery 
+## Multimeter Digit Detection Using Tensorflow For A Dead Battery 
 <img width="364" alt="image" src="https://github.com/user-attachments/assets/dfd40c27-6665-4551-803c-452141208ec9" />
 
 
